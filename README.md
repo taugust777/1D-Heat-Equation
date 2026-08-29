@@ -67,3 +67,44 @@ The Fourier problem above can also be solved numerically. The numerical method u
 $$
 \frac{\partial u}{\partial t} \approx \frac{u_i^{(j+1)} - u_i^{(j)}}{\Delta t}
 $$
+
+For the spatial derivative, a centered difference approximation is applied:
+
+$$
+\frac{\partial u^2}{\partial x^2} \approx \frac{u_{i-1}^{(j)} - 2u_i^{(j)} + u_{i+1}^{(j)}}{\Delta x^2}
+$$
+
+Then, the update formula becomes:
+
+$$
+u_i^{(j+1)} = ru_{i+1}^{(j)} + (1 - 2r)u_i^{(j)} + ru_{i-1}^{(j)}
+$$
+
+For full details on the numerical solution, see the file "Numerical_Solution.md".
+
+## Running the Model
+
+
+
+## Model Input
+
+
+
+## Output Example
+
+
+
+## Future Ideas
+
+
+
+## Packages
+
+
+
+## Use
+
+
+
+## Reference Links
+
