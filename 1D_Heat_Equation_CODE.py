@@ -85,7 +85,7 @@ for j in range(N):
 
 error = np.abs(numerical_solution - analytical_solution)
 max_error = np.max(error[:, -1])
-print("Max error between analytical and exact solutions: ", max_error)
+print("Max error between analytical and numerical solutions: ", max_error)
 
 #Plot
 #Do a two-panel plot
