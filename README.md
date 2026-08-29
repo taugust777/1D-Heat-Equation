@@ -96,7 +96,9 @@ For full details on the numerical solution, see the file "Numerical_Solution.md"
 
 ## Future Ideas
 
-
+1. Explore the effects of different initial conditions. For example, f(x) = $x^2$, f(x) = tan(x), f(x) = $\frac{1}{x}$, etc.
+2. Explore the effects of non-zero boundary conditions (i.e., non-Dirichlet BCs). Try incorporating Neumann boundary conditions within the model.
+3. Examine how the rate of temperature decay is impacted by variations in the thermal diffusivity constant, k.
 
 ## Packages
 
