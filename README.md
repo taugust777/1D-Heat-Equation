@@ -2,7 +2,7 @@
 
 ## Overview
 
-The 1D heat equation is
+The 1D heat equation is a parabolic partial differential equation (PDE), which is mathematically represented as
 
 $$
 \frac{\partial u}{\partial t} = k\frac{\partial u^2}{\partial x^2}
