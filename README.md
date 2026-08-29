@@ -99,6 +99,7 @@ For full details on the numerical solution, see the file "Numerical_Solution.md"
 1. Explore the effects of different initial conditions. For example, f(x) = $x^2$, f(x) = tan(x), f(x) = $\frac{1}{x}$, etc.
 2. Explore the effects of non-zero boundary conditions (i.e., non-Dirichlet BCs). Try incorporating Neumann boundary conditions within the model.
 3. Examine how the rate of temperature decay is impacted by variations in the thermal diffusivity constant, k.
+4. Employ an alternative temporal update, such as a Crank-Nicolson scheme. Doing so should yield a tridiagonal system, which can be solved using a Successive Over-Relaxation (SOR) method. Compare the convergence rates between the two numerical methods.
 
 ## Packages
 
