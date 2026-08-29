@@ -102,11 +102,15 @@ For full details on the numerical solution, see the file "Numerical_Solution.md"
 
 ## Packages
 
+The packages needed to run this model are:
 
+1. numpy
+2. matplotlib
+3. mplot3d from mpl_toolkits
 
 ## Use
 
-
+The code here is free and available to download, use, and can be modified any way. I do ask for an appropriate acknowledgement should it be used in any kind of project, publication, teaching material, etc.
 
 ## Reference Links
 
