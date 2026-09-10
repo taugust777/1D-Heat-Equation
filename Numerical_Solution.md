@@ -8,3 +8,19 @@ $$
 
 where u is the temperature, t is time, x is space, and k is the thermal diffusivity constant.
 
+We apply a forward finite difference approximation to the time derivative:
+
+$$
+\frac{\partial u}{\partial t} \approx \frac{u_i^{(j+1)} - u_i^{(j)}}{\Delta t}
+$$
+
+For the spatial derivative, a centered difference approximation is applied:
+
+$$
+\frac{\partial u^2}{\partial x^2} \approx \frac{u_{i-1}^{(j)} - 2u_i^{(j)} + u_{i+1}^{(j)}}{\Delta x^2}
+$$
+
+Note that the truncation errors have been omitted (For completeness, the time truncation error is first order, while the spatial truncation error is second order).
+
+We then apply the above two approximations to the 1D Heat Equation:
+
