@@ -88,9 +88,31 @@ For full details on the numerical solution, see the file "Numerical_Solution.md"
 
 ## Model Input
 
+The following parameters are needed to run this model (with the default value in parentheses):
 
+k -> This is the thermal diffusivity constant (DEFAULT = 1)
+
+L -> This is the domain space (DEFAULT = 1)
+
+r -> Represents stability (defined above; DEFAULT = 4)
+
+nx -> This is the number of spatial intervals (DEFAULT = 40)
+
+dx = L / nx -> This is the grid spacing
+
+dt = r * dx**2 / k -> This is the time grid
+
+T_fin -> This is the final time (end time; DEFAULT = 0.5)
+
+N = round(T_fin / dt)
+
+Initial condition (DEFAULT: np.sin((np.pi)*x))
+
+Boundary conditions -> Dirichlet (i.e., both boundaries are 0)
 
 ## Output Example
+
+The output shown below was generated using the default values (listed above)
 
 
 
@@ -108,10 +130,6 @@ The packages needed to run this model are:
 1. numpy
 2. matplotlib
 3. mplot3d from mpl_toolkits
-
-## Use
-
-The code here is free and available to download, use, and can be modified any way. I do ask for an appropriate acknowledgement should it be used in any kind of project, publication, teaching material, etc.
 
 ## Reference Links
 
