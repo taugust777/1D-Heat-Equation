@@ -82,10 +82,6 @@ $$
 
 For full details on the numerical solution, see the file "Numerical_Solution.md".
 
-## Running the Model
-
-
-
 ## Model Input
 
 The following parameters are needed to run this model (with the default value in parentheses):
@@ -114,7 +110,7 @@ Boundary conditions -> Dirichlet (i.e., both boundaries are 0)
 
 The output shown below was generated using the default values (listed above)
 
-
+![1D Heat Equation Model Example Output](Images/1D_Heat_Equation_EXAMPLE.png)
 
 ## Future Ideas
 
