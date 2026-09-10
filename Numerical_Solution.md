@@ -27,5 +27,17 @@ $$
 Since FTCS is an explicit method, as mentioned before, we solve for $u_i^{(j+1)}$:
 
 $$
-u_i^{(j+1)} = 
+u_i^{(j+1)} = \frac{k \Delta t}{{\Delta x}^2}u_{i+1}^{(j)} + u_{i}^{(j)} - \frac{2 k \Delta T}{{\Delta x}^2}u_{i}^{(j)} + \frac{k \Delta t}{{\Delta x}^2}u_{i-1}^{(j)}
+$$
+
+We then define the stability parameter, r, as
+
+$$
+r = \frac{k \Delta t}{{\Delta x}^2}
+$$
+
+Now, substituting that in yields the update equation:
+
+$$
+
 $$
