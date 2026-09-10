@@ -39,5 +39,7 @@ $$
 Now, substituting that in yields the update equation:
 
 $$
-
+u_i^{(j+1)} = ru_{i+1}^{(j)} + (1 - 2r)u_i^{(j)} + ru_{i-1}^{(j)}
 $$
+
+This update equation is what is applied within the model code (see "1D_Heat_Equation_CODE.py")
