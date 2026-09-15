@@ -5,7 +5,7 @@
 The 1D heat equation is a parabolic partial differential equation (PDE), which is mathematically represented as
 
 $$
-\frac{\partial u}{\partial t} = k\frac{\partial u^2}{\partial x^2}
+\frac{\partial u}{\partial t} = k\frac{\partial ^2u}{\partial x^2}
 $$
 
 where u is the temperature, t is time, x is space, and k is the thermal diffusivity constant. The initial condition for the heat equation is
@@ -31,7 +31,7 @@ for t > 0.
 Combining the above equations gives an initial-boundary value problem, or a Fourier problem:
 
 $$
-\frac{\partial u}{\partial t} = k\frac{\partial u^2}{\partial x^2}; \quad 0 < x < L, \quad t > 0
+\frac{\partial u}{\partial t} = k\frac{\partial ^2u}{\partial x^2}; \quad 0 < x < L, \quad t > 0
 $$
 
 $$
@@ -71,7 +71,7 @@ $$
 For the spatial derivative, a centered difference approximation is applied:
 
 $$
-\frac{\partial u^2}{\partial x^2} \approx \frac{u_{i-1}^{(j)} - 2u_i^{(j)} + u_{i+1}^{(j)}}{\Delta x^2}
+\frac{\partial ^2u}{\partial x^2} \approx \frac{u_{i-1}^{(j)} - 2u_i^{(j)} + u_{i+1}^{(j)}}{\Delta x^2}
 $$
 
 Then, the update formula becomes:
@@ -129,3 +129,4 @@ The packages needed to run this model are:
 
 ## Reference Links
 
+"A First Course in Partial Differential Equations" by J. Robert Buchanan and Zhoude Shao
