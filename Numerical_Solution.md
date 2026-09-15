@@ -3,7 +3,7 @@ This model uses a Forward Time-Centered Space (FTCS) Method to solve the 1D Heat
 Recall the 1D Heat Equation:
 
 $$
-\frac{\partial u}{\partial t} = k\frac{\partial u^2}{\partial x^2}
+\frac{\partial u}{\partial t} = k\frac{\partial ^2u}{\partial x^2}
 $$
 
 where u is the temperature, t is time, x is space, and k is the thermal diffusivity constant. We apply a forward finite difference approximation to the time derivative:
@@ -15,7 +15,7 @@ $$
 For the spatial derivative, a centered difference approximation is applied:
 
 $$
-\frac{\partial u^2}{\partial x^2} \approx \frac{u_{i-1}^{(j)} - 2u_i^{(j)} + u_{i+1}^{(j)}}{\Delta x^2}
+\frac{\partial ^2u}{\partial x^2} \approx \frac{u_{i-1}^{(j)} - 2u_i^{(j)} + u_{i+1}^{(j)}}{\Delta x^2}
 $$
 
 Note that we omit the truncation errors (for completeness, the time truncation error is first order, while the spatial truncation error is second order). We then apply the above two approximations to the 1D Heat Equation:
