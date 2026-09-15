@@ -58,8 +58,6 @@ $$
 a_n = \frac{2}{L}\int_{0}^{L} f(x)\sin({\frac{n\pi x}{L}})dx
 $$
 
-For full details on the analytical solution, see the file "Analytical_Solution.md".
-
 ## Numerical Methods
 
 The Fourier problem above can also be solved numerically. The numerical method used in this model is the forward time-centered space method (FTCS). In this method, a forward finite difference approximation is applied to the time derivative, that is
